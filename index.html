@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Web Design</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("fade-in");
+            
+            const links = document.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const url = this.getAttribute("href");
+                    document.body.classList.add("fade-out");
+    
+                    setTimeout(() => {
+                        window.location.href = url;
+                    }, 500); 
+                });
+            });
+        });
+    </script> 
+</head>
+<body class="container-one">
+     <img src="images/uphsmolino.jpg" alt="school">
+    
+      <h1>My Personal Web Design</h1>
+
+    <header>  
+        <h1>My Profile</h1>
+        <h2> My Name is Jocelyn B. Parane and i'm a first year college student of <br>
+            Bachelor of Science in Computer Science- Data Science <br>
+            at  the University of Perpetual  Help System Dalta - Molino Campus<br>
+            and i'm from Antipolo City but currently live in Imus Cavite. </h2> 
+
+        </p>
+    <a href="parane.html" title="parane.html" class="button"><Button>NEXT</Button></a> 
+</body>
+</html> 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("fade-in");
+            
+            const links = document.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const url = this.getAttribute("href");
+                    document.body.classList.add("fade-out");
+    
+                    setTimeout(() => {
+                        window.location.href = url;
+                    }, 500); 
+                });
+            });
+        });
+     </script>
+</head>
+<body class="container">
+     <img src="images/uphsmolino.jpg" alt="school">
+     <section>
+        <h1>SPECIALIZED;</h1> 
+        <h2>The specific area that i wanted to specialize in my course is the  Computer Programming Language <br>
+            because i want to explore more about programming  cause i think <br>
+            i do not have enough knowledge about this that's why <br>
+            my curiosity bring's me here like how to develop something using programming languages.</h2>
+        <h1>PHILOSOPHY:</h1> 
+        <h2>''Educating the mind without educating your heart is no education at all''- Aristotle</h2>
+ </section>
+        <h1> CONTACT INFORMATION</h1>
+        <h2>Phone Number; 09501053754</h2>
+        <a href="https://www.facebook.com/profile.php?id=100082965547439&mibextid=ZbWKw" class="buttonfb"><button class="buttonfb">Facebook</button></a><br>
+        <a href="https://www.instagram.com/jclynbyln_?igsh=MTNlOHFtbG5lZWtpYg=" class="buttonIg"><Button class="buttonIg">Instagram</Button></a><br>
+        <a href="index.html" title="index.html" class=" button"><Button>Back</Button></a>
+    </body> 
+</html>

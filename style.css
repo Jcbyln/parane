@@ -1,0 +1,141 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e8cfdc;
+}
+h1 {
+  text-shadow: 2px 2px 2px rgb(204, 58, 95); 
+  text-decoration: underline;
+}
+img { 
+  float: right;
+}  
+.container{
+  margin: 50px;
+  padding: 20px;
+  line-height: 1.6;
+  background-image:url(images/bg.gif); 
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center;
+}
+.container-one{
+  margin: 50px;
+  padding: 20px;
+  line-height: 1.6;
+  background-image:url(images/Bbg.gif); 
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center;
+} 
+.buttonfb{
+  background-color: blue; 
+  color: white;
+  padding: 2px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+
+.buttonfb:hover {
+  background-color: white; 
+  color: blue;
+}
+button {
+  background-color: hotpink; 
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+
+button:hover {
+  background-color: red; 
+}
+.buttonIg {
+  background: linear-gradient(45deg, #f58529, #feda75, #dd2a7b, #8134af);
+  color: white;
+  padding: 2px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+.buttonIg:hover {
+  background-color: orange; 
+}
+html, body {
+  overflow: hidden;
+  position: relative;
+}
+
+.fade-out {
+  animation: slideOutRight 0.5s forwards;
+}
+
+.fade-in {
+  animation: slideInRight 0.5s forwards;
+}
+
+@keyframes slideOutRight {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+.text-slide-in {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: textSlideIn 1s forwards;
+}
+
+@keyframes textSlideIn {
+  from {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
